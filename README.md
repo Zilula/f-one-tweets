@@ -1,70 +1,48 @@
-# module-name  
+# Formula 1 Driver Tweet API
 
-**Badges** 
+This API contains a list of web socket endpoints that can be publicly accessed. Each end point rebroadcasts tweets mentioning a specific driver or their team.
 
-Optional badges such as npm version, test and build coverage, and so on.
+### Available Endpoints 
 
-**Summary** 
+- ws://f-one-tweets-server.herokuapp.com/api/v1/f1/general
+- ws://f-one-tweets-server.herokuapp.com/api/v1/f1/max
+- ws://f-one-tweets-server.herokuapp.com/api/v1/f1/lewis
 
-One- or two-sentence description of what the module does.  
+### Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-Optionally, include a section of one or two paragraphs with more high-level 
-information on what the module does, what problems it solves, why one would 
-use it and how.  Don't just repeat what's in the summary.
+#### `npm start`
+Start the server.
 
-## Installation
+#### `npm start:watch`
+Start the server with hot reload using nodemon.
 
-```
-$ npm install module-name
-```
+#### `npm test`
+Run all test suites.
 
-## Basic use
+#### `npm test:watch`
+Run all test suites with hot reload.
 
-General description of how to use the module with basic example.  
 
-## API 
+### Tech Stack
+   - Node
+   - Express/ExpressWs
+   - MongoDB (?)
+   - Heroku/Travis CI
 
-Full API documentation.  
 
-## Examples
 
-Additional examples here.
+### Example
+Please check the example of the demo build in React [here](https://github.com/Zilula/f-one-tweets-client).
 
-## Tests
 
-What tests are included and how to run them. 
 
-## Contributing
+### TODO
+   1. Remove dead code
+   2. Add (better) error handling 
+   3. Expand number of endpoints dynamically
+   4. Write tests for each websocket
 
-This project welcomes contributions from the community. Contributions are
-accepted using GitHub pull requests; for more information, see 
-[GitHub documentation - Creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
-
-For a good pull request, we ask you provide the following:
-
-1. Include a clear description of your pull request in the description
-   with the basic "what" and "why"s for the request.
-2. The tests should pass as best as you can. GitHub will automatically run
-   the tests as well, to act as a safety net.
-3. The pull request should include tests for the change. A new feature should
-   have tests for the new feature and bug fixes should include a test that fails
-   without the corresponding code change and passes after they are applied.
-   The command `npm run test-cov` will generate a `coverage/` folder that
-   contains HTML pages of the code coverage, to better understand if everything
-   you're adding is being tested.
-4. If the pull request is a new feature, please include appropriate documentation 
-   in the `README.md` file as well.
-5. To help ensure that your code is similar in style to the existing code,
-   run the command `npm run lint` and fix any displayed issues.
-
-## Contributors
-
-Names of module "owners" (lead developers) and other developers who 
-have contributed.
-
-## License
-
-Link to the license, with a short description of what it is, 
-e.g. "MIT" or whatever.  
+### Disclaimer
+   Everyone is liable for their own use. 
